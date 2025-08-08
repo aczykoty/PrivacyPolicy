@@ -1,90 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy – LeaveANote</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy – PostItLeaveANote</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      line-height: 1.6;
       max-width: 800px;
       margin: 40px auto;
       padding: 0 20px;
-      line-height: 1.6;
-      background-color: #f9f9f9;
       color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
     }
     h1 {
       text-align: center;
-      margin-bottom: 40px;
     }
-    h2 {
-      margin-top: 30px;
-      color: #0055aa;
-    }
-    p {
-      margin: 10px 0;
+    footer {
+      margin-top: 40px;
+      font-style: italic;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy for Mobile Application</h1>
+  <h1>Privacy Policy for PostItLeaveANote</h1>
+  <p><strong>Effective Date:</strong> August 8, 2025<br/>
+     <strong>Last Updated:</strong> August 8, 2025</p>
 
   <h2>1. Data Controller</h2>
-  <p>The data controller for this mobile application is Grzegorz Nowak (LeaveANote team). For inquiries related to data protection, contact me at <a href="mailto:grzegorz.jan.nowak@gmail.com">grzegorz.jan.nowak@gmail.com</a>.</p>
+  <p>The data controller for this mobile application is <strong>Grzegorz Nowak</strong> (LeaveANote team).  
+     For inquiries related to data protection, contact: <a href="mailto:grzegorz.jan.nowak@gmail.com">grzegorz.jan.nowak@gmail.com</a></p>
 
   <h2>2. What Data We Collect</h2>
   <ul>
-    <li><strong>Device Identifier (UID)</strong> – automatically generated to uniquely identify users.</li>
-    <li><strong>Location Data (GPS)</strong> – used for positioning AR notes; stored on Firebase servers.</li>
-    <li><strong>Camera Feed</strong> – utilized for AR functionality; not saved or analyzed externally.</li>
-    <li><strong>Note Content</strong> – sent to an external server for synchronization.</li>
+    <li><strong>Device Identifier (UID):</strong> Automatically generated to uniquely identify users.</li>
+    <li><strong>Location Data (GPS):</strong> Latitude, longitude, and altitude used to position AR notes.</li>
+    <li><strong>Camera Feed:</strong> Used locally to detect surfaces for AR functionality. No images or video are stored or transmitted.</li>
+    <li><strong>Note Content:</strong> Includes text, skin ID, room and location identifiers, 3D position and rotation, timestamps, and author UID.</li>
+    <li><strong>Technical Metadata:</strong> Includes flags like <code>isTemporary</code>, <code>noteId</code>, and timestamps (<code>createdAt</code>, <code>updatedAt</code>).</li>
   </ul>
+  <p>All data is stored securely on <strong>Firebase servers</strong> for synchronization and app functionality.</p>
 
   <h2>3. Purpose of Data Processing</h2>
   <ul>
-    <li>Assign a unique user identifier.</li>
-    <li>Position augmented reality (AR) notes accurately.</li>
-    <li>Synchronize note content with external servers.</li>
-    <li>Enable camera-based AR features.</li>
+    <li>Assign a unique identifier to each user</li>
+    <li>Accurately position augmented reality (AR) notes in physical space</li>
+    <li>Synchronize note content across devices</li>
+    <li>Enable camera-based AR features</li>
+    <li>Improve app functionality and stability</li>
   </ul>
 
   <h2>4. Legal Basis</h2>
   <ul>
-    <li>User consent provided upon first app launch.</li>
-    <li>Legitimate interest of the data controller (e.g. app functionality improvements).</li>
+    <li><strong>User consent</strong>, provided upon first app launch</li>
+    <li><strongLegitimate interest</strong> of the data controller, such as ensuring proper app operation and improving user experience</li>
   </ul>
 
   <h2>5. Data Sharing</h2>
   <ul>
-    <li>Google Firebase – as a third-party data processor.</li>
-    <li>Other technical servers required to ensure proper app operation.</li>
+    <li><strong>Google Firebase</strong>, which acts as a third-party data processor for storage, synchronization, and crash reporting</li>
+    <li>No other third-party SDKs or advertising services are used</li>
+    <li>No data is shared for tracking, profiling, or advertising purposes</li>
   </ul>
 
   <h2>6. Data Retention</h2>
   <ul>
-    <li><strong>UID</strong> – retained until app removal or data deletion by the user.</li>
-    <li><strong>Notes</strong> – stored until the user manually deletes them.</li>
-    <li><strong>Location</strong> – temporarily held for synchronization purposes only.</li>
+    <li><strong>Device UID:</strong> Retained until the app is removed or the user requests deletion</li>
+    <li><strong>Notes and metadata:</strong> Stored until manually deleted by the user</li>
+    <li><strong>Location data:</strong> Temporarily held for positioning and synchronization only</li>
   </ul>
 
   <h2>7. User Rights</h2>
+  <p>Users have the right to:</p>
   <ul>
     <li>Access their data</li>
     <li>Delete their data</li>
-    <li>Withdraw consent</li>
-    <li>Restrict processing</li>
+    <li>Withdraw consent at any time</li>
+    <li>Restrict or object to data processing</li>
   </ul>
+  <p>To exercise these rights, contact: <a href="mailto:postitleaveanote@gmail.com">postitleaveanote@gmail.com</a></p>
 
   <h2>8. Additional Information</h2>
   <ul>
-    <li>The app does not support or require account creation.</li>
-    <li>No sensitive personal data (e.g. medical, religious) is collected.</li>
-    <li>We implement technical and organizational measures to safeguard user data.</li>
-    <li>If you have any questions, problems, ideas or any other case of using app contact me at postitleaveanote@gmail.com</li>
-    
+    <li>The app does <strong>not require account creation</strong></li>
+    <li>No sensitive personal data (e.g. medical, religious, financial) is collected</li>
+    <li>We implement <strong>technical and organizational measures</strong> to safeguard user data</li>
+    <li>Camera input is processed <strong>locally</strong> and never stored or transmitted</li>
+    <li>Location data is used <strong>solely for AR positioning</strong> and is <strong>not shared or used for tracking</strong></li>
   </ul>
 
-  <p style="text-align:center; margin-top:40px;">LeaveANote Team 🙂</p>
+  <footer>LeaveANote Team 🙂<br/>Thank you for trusting us with your data.</footer>
 </body>
 </html>
